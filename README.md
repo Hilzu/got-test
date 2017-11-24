@@ -8,8 +8,10 @@ easy testing for Node application servers, similar to what [supertest](https://g
 
 Features:
 
-* Works with built-in [Server](https://nodejs.org/dist/latest-v8.x/docs/api/net.html#net_class_net_server) object (thus including [Koa](https://github.com/koajs/koa) and [Express](https://expressjs.com/))
-* Supports default Got options with per-request overrides
+* Works with built-in [Server](https://nodejs.org/dist/latest-v8.x/docs/api/net.html#net_class_net_server) object (including [Koa](https://github.com/koajs/koa) and [Express](https://expressjs.com/) applications)
+* Supports default options with per-request overrides
+* Works with your assertion library of choice
+* Can work in browser too
 * Comprehensive test coverage
 
 ## Installation
