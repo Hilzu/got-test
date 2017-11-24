@@ -1,0 +1,7 @@
+src/
+.gitignore
+.babelrc
+.eslintrc
+.eslintignore
+.travis.yml
+npm-debug.log

@@ -1,0 +1,44 @@
+{
+  "name": "got-test",
+  "version": "1.0.0",
+  "description": "Wrapper around Got to make node server testing easier",
+  "main": "dist/index.js",
+  "repository": "https://github.com/hiddentao/got-test.git",
+  "author": "Ramesh Nair <ram@hiddentao.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel --ignore test.js --out-dir dist src",
+    "lint": "eslint ./src",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-jest-assertions": "^0.0.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.11.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^21.2.1"
+  },
+  "dependencies": {
+    "got": "^8.0.0"
+  },
+  "jest": {
+    "roots": [
+      "./src/"
+    ],
+    "testMatch": [
+      "**/?(*.)test.js"
+    ],
+    "collectCoverageFrom": [
+      "**/*.js"
+    ]
+  }
+}
