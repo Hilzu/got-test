@@ -131,6 +131,10 @@ describe('app', () => {
 })
 ```
 
+The `server` parameter passed to `gotServer()` only needs to have an `address()`
+method - see API docs below...
+
+
 ## API
 
 ### gotServer (httpServer, defaultOptions = {})
