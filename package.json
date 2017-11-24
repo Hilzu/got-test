@@ -1,6 +1,6 @@
 {
   "name": "got-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wrapper around Got to make node server testing easier",
   "main": "dist/index.js",
   "repository": "https://github.com/hiddentao/got-test.git",
