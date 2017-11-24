@@ -131,8 +131,6 @@ describe('app', () => {
 })
 ```
 
-:)
-
 ## API
 
 ### gotServer (httpServer, defaultOptions = {})
