@@ -1,7 +1,10 @@
 # got-test
 
 [![Build Status](https://secure.travis-ci.org/hiddentao/got-test.svg?branch=master)](http://travis-ci.org/hiddentao/got-test)
+[![Codecov](https://codecov.io/gh/hiddentao/got-test/branch/master/graph/badge.svg)](https://codecov.io/gh/hiddentao/got-test)
 [![NPM module](https://badge.fury.io/js/got-test.svg)](https://badge.fury.io/js/got-test)
+
+
 
 This is a wrapper around [Got](https://www.npmjs.com/package/got) to enable
 easy testing for Node application servers, similar to what [supertest](https://github.com/visionmedia/supertest) does.
