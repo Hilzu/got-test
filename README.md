@@ -128,9 +128,9 @@ describe('app', () => {
 })
 ```
 
-## API
+:)
 
-At present a single method is available:
+## API
 
 ### gotServer (httpServer, defaultOptions = {})
 
@@ -149,11 +149,13 @@ calls. All options can be overridden in individual requests (see below).
 
 It return an object with the following methods available:
 
-* `get(url, options = {})` - calls through to `got.get(url, defaultOptions + options)`
-* `post(url, options = {})` - calls through to `got.post(url, defaultOptions + options)`
-* `put(url, options = {})` - calls through to `got.put(url, defaultOptions + options)`
-* `del(url, options = {})` - calls through to `got.delete(url, defaultOptions + options)`
+* `get(url, options = {})` - calls `got.get(url, { ...defaultOptions, ...options })`
+* `post(url, options = {})` - calls `got.post(url, { ...defaultOptions, ...options })`
+* `put(url, options = {})` - calls `got.put(url, { ...defaultOptions, ...options })`
+* `del(url, options = {})` - calls `got.delete(url, { ...defaultOptions, ...options })`
 
+As you can see each call passes the `got` call result right back to you, so it's
+as if you're using `got` directly.
 
 ## License
 
