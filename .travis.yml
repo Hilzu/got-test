@@ -12,6 +12,7 @@ cache:
 script:
   - "yarn test:coverage"
   - "yarn codecov"
+  - "yarn build"
 
 notifications:
   email:
